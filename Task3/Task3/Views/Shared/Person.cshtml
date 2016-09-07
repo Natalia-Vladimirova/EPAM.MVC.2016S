@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Person";
+}
+
+
+@Html.Partial("_Header")
+
+<h2>Person</h2>
+
+
+
+@section footer {
+    @Html.Action("GetFooter", "Home")
+    <script src="changeSite.js"></script>
+    
+}
