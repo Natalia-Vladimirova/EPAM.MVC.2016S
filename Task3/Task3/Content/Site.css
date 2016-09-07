@@ -21,19 +21,26 @@ textarea {
 }
 
 .black-side {
-    background-color: black;
+    background-color: #231F20;
+    color: white;
 }
 
 .black-side .pic {
-    background: url(Content/black.png);
-    background-size: 100% auto;
+    background: url(dark.png) no-repeat;
+    background-size: contain;
+
 }
 
 .white-side {
-    background-color:antiquewhite;
+    background-color: white;
 }
 
 .white-side .pic {
-    background: url(Content/white.png);
-    background-size: 100% auto;
+    background: url(white.png) no-repeat;
+    background-size: contain;
+}
+
+#sideForm {
+    width: 300px;
+    margin: auto;
 }

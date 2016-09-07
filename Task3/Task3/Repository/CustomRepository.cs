@@ -7,19 +7,17 @@ namespace Task3.Repository
 {
     public class CustomRepository
     {
-        public static List<string> Sides { get; set; } = new List<string>()
-        {
-            "White",
-            "Black"
-        };
-
-
-
+        public static User User { get; set; } = new User();
     }
 
     public enum Sides
     {
         White,
         Black
+    }
+
+    public class User
+    {
+        public Sides Side { get; set; }
     }
 }

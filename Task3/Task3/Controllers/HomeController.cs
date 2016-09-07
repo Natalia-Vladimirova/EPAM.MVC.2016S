@@ -1,34 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using Task3.Repository;
 
 namespace Task3.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
         public ActionResult Index()
         {
-            return View("Person");
+            return View("Person", CustomRepository.User.Side);
         }
 
-        [HttpPost]
-        public ActionResult GetFooter(string action)
+        [HttpGet]
+        public ActionResult GetFooter()
         {
-            if (action == "yes")
-            {
-                //ExcelReport(model);
-            }
-            else if (action == "no")
-            {
-
-              //  return GetReport(model);
-            }
-
-          //  return PartialView("_Footer");
+            return PartialView("_Footer");
         }
-
     }
 }
