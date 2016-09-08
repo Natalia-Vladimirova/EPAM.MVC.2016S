@@ -134,8 +134,6 @@
     <Content Include="scripts\jquery-1.10.2.min.js" />
     <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
-    <Content Include="Views\Shared\_HeaderWhite.cshtml" />
-    <Content Include="Views\Shared\_HeaderBlack.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
