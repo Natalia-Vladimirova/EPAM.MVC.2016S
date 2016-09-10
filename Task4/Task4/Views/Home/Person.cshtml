@@ -1,0 +1,14 @@
+﻿@model Task4.Models.Person
+
+@{
+    ViewBag.Title = "Person";
+}
+
+@if (Model == null)
+{
+    @Html.Partial("_CreatePerson", Model)
+}
+else
+{
+    @Html.Partial("_PersonDetails", Model)
+}
